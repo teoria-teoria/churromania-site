@@ -1,4 +1,4 @@
-# proposal — churromania website rebuild
+# proposal: churromania website rebuild
 
 date: june 6, 2026
 author: mateo acosta-rubio

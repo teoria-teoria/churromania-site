@@ -1,12 +1,12 @@
 # churromania-site
 
-MP1 for OIM 3690 — Summer 2026.
+MP1 for OIM 3690, Summer 2026.
 
 A rebuild of the churromania.com website. The current site is outdated and not accessibility-compliant. This project focuses on modernizing the look while keeping the brand heritage, and improving the funnel for prospective franchisees.
 
 ## Client
 
-ChurroMania — a churro franchise with 30+ years in business and 140+ locations across 10 countries.
+ChurroMania, a churro franchise with 30+ years in business and 140+ locations across 10 countries.
 
 ## Links
 
