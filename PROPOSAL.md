@@ -60,9 +60,9 @@ one idea i want to test: adding a b2b visitor identification tool that captures 
 
 this is a stretch goal. v1 of the site doesn't need it.
 
-## rough sketch
+## mood board
 
-going to do this on paper this weekend and add it to the repo as a photo. layout will follow the page structure above. desktop-first, mobile responsive.
+i put together a one-slide mood board with reference images and a rough layout. it's in the repo as mood-board.pdf.
 
 ## timeline
 
