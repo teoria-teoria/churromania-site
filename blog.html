@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stories | ChurroManía | Behind the Brand</title>
+  <meta name="description" content="Stories from ChurroManía. Behind the brand, recipes, franchise stories, and updates from 28 years of frying churros.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Lexend+Deca:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-cm-cream text-cm-blue-dark font-body">
+
+  <!-- ============ HEADER ============ -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <a href="index.html" class="font-display font-bold text-2xl text-cm-blue-dark tracking-tight">ChurroManía</a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Primary">
+        <a href="menu.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors">Menu</a>
+        <a href="stores.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors">Stores</a>
+        <a href="about.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors">About</a>
+        <a href="blog.html" class="font-body text-cm-blue transition-colors">Stories</a>
+        <a href="franchise.html" class="inline-flex items-center gap-2 px-5 py-2.5 bg-cm-blue text-white font-display font-semibold rounded-xl hover:bg-cm-blue-deep transition-colors">Franchise</a>
+      </nav>
+      <button id="nav-toggle" class="md:hidden p-2 -mr-2 text-cm-blue-dark" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-cm-blue-dark/10 bg-white/95 backdrop-blur-md">
+      <nav class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1" aria-label="Mobile">
+        <a href="menu.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">Menu</a>
+        <a href="stores.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">Stores</a>
+        <a href="about.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">About</a>
+        <a href="blog.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">Stories</a>
+        <a href="franchise.html" class="mt-2 inline-flex items-center justify-center gap-2 px-5 py-3 bg-cm-blue text-white font-display font-semibold rounded-xl hover:bg-cm-blue-deep">Franchise</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="pt-32 md:pt-40 pb-12 md:pb-16">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 space-y-4">
+        <span class="font-mono text-xs uppercase tracking-wider text-cm-blue-dark/50">Stories</span>
+        <h1 class="font-display text-4xl md:text-6xl font-bold tracking-tight text-cm-blue-dark">Behind the brand.</h1>
+        <p class="font-body text-lg md:text-xl text-cm-blue-dark/70 max-w-2xl">Recipes, franchise stories, and notes from 28 years of frying churros.</p>
+      </div>
+    </section>
+
+    <section class="pb-20">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <nav id="blog-filters" class="flex flex-wrap gap-2 mb-10" aria-label="Filter by category">
+          <!-- filter pills rendered from data/blog.json -->
+        </nav>
+        <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- rendered from data/blog.json -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-cm-blue-dark text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="font-display font-bold text-2xl mb-4">ChurroManía</div>
+          <p class="text-white/70 text-sm">28 years of churros. 120+ stores. 10 countries.</p>
+        </div>
+        <div>
+          <h2 class="font-mono text-xs uppercase tracking-wider text-cm-yellow mb-4">Explore</h2>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="menu.html" class="hover:text-white">Menu</a></li>
+            <li><a href="stores.html" class="hover:text-white">Find a Store</a></li>
+            <li><a href="about.html" class="hover:text-white">Our Story</a></li>
+            <li><a href="blog.html" class="hover:text-white">Stories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-mono text-xs uppercase tracking-wider text-cm-yellow mb-4">Business</h2>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="franchise.html" class="hover:text-white">Become a Franchisee</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-mono text-xs uppercase tracking-wider text-cm-yellow mb-4">Connect</h2>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li>Instagram</li>
+            <li>TikTok</li>
+            <li>YouTube</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-white/50">&copy; 2026 ChurroManía. All rights reserved.</p>
+        <p class="font-mono text-xs uppercase tracking-wider text-white/40">Made with care since 1997</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/nav.js"></script>
+  <script>
+    (async function () {
+      const blog = await loadData('data/blog.json');
+      if (!blog) return;
+      const posts = blog.posts;
+      const grid = document.getElementById('blog-grid');
+      const filters = document.getElementById('blog-filters');
+
+      function fmtDate(iso) {
+        const d = new Date(iso + 'T00:00:00');
+        return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+      }
+
+      function card(post) {
+        return `
+          <a href="${esc(post.url)}" data-category="${esc(post.category)}" class="blog-card group rounded-2xl bg-white border border-cm-blue-dark/5 overflow-hidden hover:shadow-lg hover:shadow-cm-blue/5 transition-all duration-200 block">
+            <div class="aspect-[16/9] bg-cm-blue-pale overflow-hidden">
+              ${cmImg(post.image, post.title, 'w-full h-full object-cover group-hover:scale-105 transition-transform duration-300')}
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="font-mono text-xs uppercase tracking-wider text-cm-blue/70">${esc(post.category)}</span>
+                <span class="text-cm-blue-dark/30" aria-hidden="true">&middot;</span>
+                <span class="font-mono text-xs text-cm-blue-dark/40">${esc(fmtDate(post.date))}</span>
+              </div>
+              <h2 class="font-display text-lg font-bold text-cm-blue-dark leading-snug">${esc(post.title)}</h2>
+              <p class="font-body text-sm text-cm-blue-dark/70 mt-2">${esc(post.excerpt)}</p>
+            </div>
+          </a>`;
+      }
+
+      grid.innerHTML = posts.map(card).join('');
+
+      // category filter pills
+      const cats = ['All', ...Array.from(new Set(posts.map(p => p.category)))];
+      function pill(name, active) {
+        return `<button type="button" data-cat="${esc(name)}" class="blog-pill px-4 py-2 rounded-full border font-display font-semibold text-sm transition-colors ${active ? 'bg-cm-blue text-white border-cm-blue' : 'bg-white text-cm-blue-dark border-cm-blue-dark/10 hover:border-cm-blue hover:text-cm-blue'}">${esc(name)}</button>`;
+      }
+      filters.innerHTML = cats.map((c, i) => pill(c, i === 0)).join('');
+
+      filters.addEventListener('click', function (e) {
+        const btn = e.target.closest('.blog-pill');
+        if (!btn) return;
+        const cat = btn.dataset.cat;
+        filters.querySelectorAll('.blog-pill').forEach(b => {
+          const on = b === btn;
+          b.classList.toggle('bg-cm-blue', on);
+          b.classList.toggle('text-white', on);
+          b.classList.toggle('border-cm-blue', on);
+          b.classList.toggle('bg-white', !on);
+          b.classList.toggle('text-cm-blue-dark', !on);
+          b.classList.toggle('border-cm-blue-dark/10', !on);
+        });
+        grid.querySelectorAll('.blog-card').forEach(c => {
+          c.classList.toggle('hidden', cat !== 'All' && c.dataset.category !== cat);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
