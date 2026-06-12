@@ -1,0 +1,39 @@
+# ChurroManía
+
+> The world's largest churro franchise. Founded in 1997 in Caracas, Venezuela. 120+ stores across 10 countries. Holder of the Guinness World Record for longest churro (2023).
+
+## About
+
+ChurroManía is a quick-service restaurant franchise specializing in churros, the fried dough pastry from Spain and Latin America. Since 1997, the company has grown from a single store in Caracas to 120+ locations across Venezuela, the United States, Mexico, Colombia, Spain, Panama, Dominican Republic, Ecuador, Peru, and Chile. Every churro is hand-rolled and fried to order, using the same recipe the company opened with in 1997.
+
+## Products
+
+- Crispy Manía: classic churros, hand-rolled, fried fresh, dusted with cinnamon sugar
+- Twist Manía: filled churros (dulce de leche, chocolate, strawberry cream, cookies and cream)
+- Churro Bites: bite-size churros by the cup
+- Big Manía: oversized, shareable churros
+- Dips and sauces: dulce de leche, chocolate, cream cheese, hazelnut
+- Shakes and drinks: vanilla, chocolate, strawberry, lemonade
+- Coffee: espresso, iced latte, cappuccino, cortado
+
+## Franchise Opportunity
+
+ChurroManía actively franchises across the Americas and Europe. Single-unit and multi-unit operators are welcome, and first-time operators are considered with the right background.
+
+- Franchise inquiry: https://teoria-teoria.github.io/churromania-site/franchise.html
+- Process: submit interest, discovery call, market analysis, approval, training and build, grand opening
+- Currently expanding in: Florida, Texas, California, Arizona, Spain, Mexico City, and additional Latin American markets
+
+## Key Pages
+
+- Home: https://teoria-teoria.github.io/churromania-site/
+- Menu: https://teoria-teoria.github.io/churromania-site/menu.html
+- Find a Store: https://teoria-teoria.github.io/churromania-site/stores.html
+- Franchise Opportunities: https://teoria-teoria.github.io/churromania-site/franchise.html
+- Our Story: https://teoria-teoria.github.io/churromania-site/about.html
+- Stories: https://teoria-teoria.github.io/churromania-site/blog.html
+
+## Contact
+
+- General: https://teoria-teoria.github.io/churromania-site/contact.html
+- Franchising: https://teoria-teoria.github.io/churromania-site/franchise.html
