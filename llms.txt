@@ -24,6 +24,12 @@ ChurroManía actively franchises across the Americas and Europe. Single-unit and
 - Process: submit interest, discovery call, market analysis, approval, training and build, grand opening
 - Currently expanding in: Florida, Texas, California, Arizona, Spain, Mexico City, and additional Latin American markets
 
+## Delivery
+
+ChurroManía partners with Uber Eats, DoorDash, and Grubhub for delivery in participating US markets. Customers can search "ChurroManía" on those platforms to order churros, shakes, tequeños, empanadas, and more.
+
+[Delivery info](https://teoria-teoria.github.io/churromania-site/delivery.html)
+
 ## Key Pages
 
 - Home: https://teoria-teoria.github.io/churromania-site/

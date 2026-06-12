@@ -14,7 +14,7 @@
   <meta property="og:description" content="Crispy Manía, Twist Manía, Churro Bites, Big Manía, dips, shakes, and coffee. Crispy fresh, fried to order.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://teoria-teoria.github.io/churromania-site/menu.html">
-  <meta property="og:image" content="https://teoria-teoria.github.io/churromania-site/images/hero/hero-churros.jpg">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1541544741938-0af808871cc0?w=1200">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Menu | ChurroManía">
   <meta name="twitter:description" content="Crispy Manía, Twist Manía, Churro Bites, Big Manía, and more.">
@@ -31,6 +31,7 @@
       <a href="index.html" class="font-display font-bold text-2xl text-cm-blue-dark tracking-tight">ChurroManía</a>
       <nav class="hidden md:flex items-center gap-8" aria-label="Primary">
         <a href="menu.html" class="font-body text-cm-blue transition-colors">Menu</a>
+        <a href="delivery.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors">Delivery</a>
         <a href="stores.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors">Stores</a>
         <a href="about.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors">About</a>
         <a href="blog.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors">Stories</a>
@@ -45,6 +46,7 @@
     <div id="mobile-menu" class="hidden md:hidden border-t border-cm-blue-dark/10 bg-white/95 backdrop-blur-md">
       <nav class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1" aria-label="Mobile">
         <a href="menu.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">Menu</a>
+        <a href="delivery.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">Delivery</a>
         <a href="stores.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">Stores</a>
         <a href="about.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">About</a>
         <a href="blog.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">Stories</a>
@@ -57,7 +59,6 @@
     <!-- ============ PAGE TITLE ============ -->
     <section class="pt-32 md:pt-40 pb-12 md:pb-16">
       <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 space-y-4">
-        <span class="font-mono text-xs uppercase tracking-wider text-cm-blue-dark/50">The menu</span>
         <h1 class="font-display text-4xl md:text-6xl font-bold tracking-tight text-cm-blue-dark">The Menu</h1>
         <p class="font-body text-lg md:text-xl text-cm-blue-dark/70 max-w-2xl">Crispy fresh, fried to order. The same secret formula in every store since 1997.</p>
       </div>
@@ -90,6 +91,7 @@
           <h2 class="font-mono text-xs uppercase tracking-wider text-cm-yellow mb-4">Explore</h2>
           <ul class="space-y-2 text-sm text-white/70">
             <li><a href="menu.html" class="hover:text-white">Menu</a></li>
+            <li><a href="delivery.html" class="hover:text-white">Delivery</a></li>
             <li><a href="stores.html" class="hover:text-white">Find a Store</a></li>
             <li><a href="about.html" class="hover:text-white">Our Story</a></li>
             <li><a href="blog.html" class="hover:text-white">Stories</a></li>
@@ -113,13 +115,14 @@
       </div>
       <div class="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <p class="text-sm text-white/50">&copy; 2026 ChurroManía. All rights reserved.</p>
-        <p class="font-mono text-xs uppercase tracking-wider text-white/40">Made with care since 1997</p>
+        <p class="font-mono text-xs uppercase tracking-wider text-white/40">Made with love since 1997</p>
       </div>
     </div>
   </footer>
 
   <script src="js/data.js"></script>
   <script src="js/nav.js"></script>
+  <script src="js/motion.js"></script>
   <script>
     (async function () {
       const menu = await loadData('data/menu.json');

@@ -14,7 +14,7 @@
   <meta property="og:description" content="The world's largest churro franchise. 120+ stores. 10 countries. Crispy fresh since 1997.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://teoria-teoria.github.io/churromania-site/">
-  <meta property="og:image" content="https://teoria-teoria.github.io/churromania-site/images/hero/hero-churros.jpg">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1541544741938-0af808871cc0?w=1200">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ChurroManía | Churros Since 1997">
   <meta name="twitter:description" content="The world's largest churro franchise. 120+ stores. 10 countries.">
@@ -25,27 +25,30 @@
 </head>
 <body class="bg-cm-cream text-cm-blue-dark font-body">
 
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:px-4 focus:py-2 focus:bg-cm-blue focus:text-white focus:rounded-xl">Skip to content</a>
+
   <!-- ============ HEADER ============ -->
   <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-200">
     <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-4 flex items-center justify-between">
-      <a href="index.html" class="font-display font-bold text-2xl text-cm-blue-dark tracking-tight">ChurroManía</a>
+      <a href="index.html" class="font-display font-bold text-2xl text-cm-blue-dark tracking-tight rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40" translate="no">ChurroManía</a>
       <nav class="hidden md:flex items-center gap-8" aria-label="Primary">
-        <a href="menu.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors">Menu</a>
-        <a href="stores.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors">Stores</a>
-        <a href="about.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors">About</a>
-        <a href="blog.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors">Stories</a>
-        <a href="franchise.html" class="inline-flex items-center gap-2 px-5 py-2.5 bg-cm-blue text-white font-display font-semibold rounded-xl hover:bg-cm-blue-deep transition-colors">Franchise</a>
+        <a href="menu.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">Menu</a>
+        <a href="delivery.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">Delivery</a>
+        <a href="stores.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">Stores</a>
+        <a href="about.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">About</a>
+        <a href="blog.html" class="font-body text-cm-blue-dark/80 hover:text-cm-blue transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">Stories</a>
+        <a href="franchise.html" class="inline-flex items-center gap-2 px-5 py-2.5 bg-cm-blue text-white font-display font-semibold rounded-xl hover:bg-cm-blue-deep transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">Franchise</a>
       </nav>
-      <button id="nav-toggle" class="md:hidden p-2 -mr-2 text-cm-blue-dark" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <button id="nav-toggle" class="md:hidden p-2 -mr-2 text-cm-blue-dark rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40" style="touch-action:manipulation" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
     </div>
-    <!-- mobile menu -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-cm-blue-dark/10 bg-white/95 backdrop-blur-md">
       <nav class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1" aria-label="Mobile">
         <a href="menu.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">Menu</a>
+        <a href="delivery.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">Delivery</a>
         <a href="stores.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">Stores</a>
         <a href="about.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">About</a>
         <a href="blog.html" class="py-3 font-body text-cm-blue-dark/80 hover:text-cm-blue">Stories</a>
@@ -54,36 +57,52 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
     <!-- ============ HERO ============ -->
     <section class="relative min-h-screen flex items-center pt-20 bg-cm-cream overflow-hidden">
       <div class="absolute inset-0 bg-dot-grid opacity-50" aria-hidden="true"></div>
+      <!-- decorative brand sparkle -->
+      <svg viewBox="0 0 100 100" class="doodle-drift absolute top-28 right-10 lg:right-32 w-10 h-10 text-cm-yellow-warm opacity-90 hidden sm:block" style="--r:0deg" aria-hidden="true"><path d="M50 6 C53 30 70 47 94 50 C70 53 53 70 50 94 C47 70 30 53 6 50 C30 47 47 30 50 6 Z" fill="currentColor"/></svg>
+
       <div class="relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-16 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
         <div class="lg:col-span-7 space-y-8">
-          <div class="inline-flex items-center gap-2 px-4 py-2 bg-cm-yellow rounded-full border border-cm-blue-dark/10 fade-up">
-            <span class="font-mono text-xs uppercase tracking-wider text-cm-blue-dark font-semibold">Guinness World Record &middot; 2023</span>
-          </div>
-          <h1 class="font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight leading-[0.9] text-cm-blue-dark fade-up fade-up-delay-1">
+          <p class="font-display text-lg font-semibold text-cm-blue fade-up">Crispy fresh. Made with love.</p>
+          <h1 class="font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-[-0.04em] leading-[0.9] text-cm-blue-dark fade-up fade-up-delay-1 text-balance">
             Churros,<br>since 1997.
           </h1>
           <p class="font-body text-lg md:text-xl text-cm-blue-dark/70 max-w-xl leading-relaxed fade-up fade-up-delay-2">
-            The world's largest churro franchise. 120+ stores. 10 countries. One recipe that hasn't changed since day one.
+            The world's largest churro franchise. 120+ stores. 10 countries. One secret formula that hasn't changed since day one.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 fade-up fade-up-delay-3">
-            <a href="franchise.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-cm-blue text-white font-display font-bold rounded-xl hover:bg-cm-blue-deep transition-all duration-200 shadow-lg shadow-cm-blue/20 hover:shadow-xl hover:shadow-cm-blue/30">
-              Become a Franchisee
+            <a href="stores.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-cm-blue text-white font-display font-bold rounded-xl hover:bg-cm-blue-deep active:scale-95 transition-all duration-200 shadow-lg shadow-cm-blue/20 hover:shadow-xl hover:shadow-cm-blue/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40 focus-visible:ring-offset-2 focus-visible:ring-offset-cm-cream">
+              Find a Store
               <span aria-hidden="true">&rarr;</span>
             </a>
-            <a href="menu.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-cm-blue-dark border-2 border-cm-blue-dark/10 font-display font-semibold rounded-xl hover:border-cm-blue hover:text-cm-blue transition-all">
+            <a href="menu.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-cm-blue-dark border-2 border-cm-blue-dark/10 font-display font-semibold rounded-xl hover:border-cm-blue hover:text-cm-blue active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">
               See the Menu
             </a>
           </div>
         </div>
-        <div class="lg:col-span-5">
+        <div class="lg:col-span-5 relative">
           <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl shadow-cm-blue/10 bg-cm-blue-pale">
-            <img src="images/hero/hero-churros.jpg" alt="Fresh churros dusted with cinnamon sugar" class="w-full h-full object-cover"
+            <!-- placeholder unsplash, swap to images/hero/hero-churros.jpg when added -->
+            <img class="hero-img w-full h-full object-cover" width="1200" height="1200" fetchpriority="high"
+              src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?w=1200"
+              alt="Fresh churros dusted with cinnamon sugar"
               onerror="this.onerror=null;this.src='images/brand/placeholder.svg'">
+          </div>
+          <!-- Guinness world record seal (replaces the generic pill) -->
+          <div class="absolute -top-5 -left-5 w-28 h-28 md:w-32 md:h-32 drop-shadow-lg" aria-label="Guinness World Record, longest churro, 2023" role="img">
+            <svg viewBox="0 0 130 130" class="w-full h-full" aria-hidden="true">
+              <circle cx="65" cy="65" r="62" fill="#FFDC10"/>
+              <circle cx="65" cy="65" r="62" fill="none" stroke="#11345A" stroke-width="3" stroke-dasharray="1.5 6.5" stroke-linecap="round"/>
+              <circle cx="65" cy="65" r="50" fill="none" stroke="#11345A" stroke-width="1.5"/>
+              <defs><path id="sealArc" d="M65,65 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0"/></defs>
+              <text fill="#11345A" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" letter-spacing="1.3"><textPath href="#sealArc" startOffset="2%">GUINNESS WORLD RECORD · LONGEST CHURRO ·</textPath></text>
+              <text x="65" y="62" text-anchor="middle" font-family="'Bricolage Grotesque', sans-serif" font-size="26" font-weight="800" fill="#11345A">2023</text>
+              <text x="65" y="80" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8" letter-spacing="1.5" fill="#11345A">WORLD RECORD</text>
+            </svg>
           </div>
         </div>
       </div>
@@ -93,48 +112,48 @@
     <div class="bg-cm-blue-dark py-5 overflow-hidden" aria-hidden="true">
       <div class="marquee">
         <div class="marquee__content font-mono text-sm uppercase tracking-wider text-cm-yellow">
-          <span>28 Years</span><span>&middot;</span><span>120+ Stores</span><span>&middot;</span><span>10 Countries</span><span>&middot;</span><span>World Record Holder</span><span>&middot;</span><span>Since 1997</span><span>&middot;</span>
+          <span>28 Years</span><span>·</span><span>120+ Stores</span><span>·</span><span>10 Countries</span><span>·</span><span>World Record Holder</span><span>·</span><span>Since 1997</span><span>·</span>
         </div>
         <div class="marquee__content font-mono text-sm uppercase tracking-wider text-cm-yellow">
-          <span>28 Years</span><span>&middot;</span><span>120+ Stores</span><span>&middot;</span><span>10 Countries</span><span>&middot;</span><span>World Record Holder</span><span>&middot;</span><span>Since 1997</span><span>&middot;</span>
+          <span>28 Years</span><span>·</span><span>120+ Stores</span><span>·</span><span>10 Countries</span><span>·</span><span>World Record Holder</span><span>·</span><span>Since 1997</span><span>·</span>
         </div>
       </div>
     </div>
 
     <!-- ============ BRAND STORY PREVIEW ============ -->
     <section class="py-16 md:py-24 lg:py-32">
-      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-        <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-cm-blue-pale">
-          <img src="images/hero/story-churros.jpg" alt="Fresh churros dusted with cinnamon sugar" class="w-full h-full object-cover"
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center reveal">
+        <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-cm-blue-pale rotate-[-1.5deg] hover:rotate-0 transition-transform duration-500">
+          <!-- placeholder unsplash, swap to images/hero/story-churros.jpg when added -->
+          <img class="w-full h-full object-cover" width="1000" height="750" loading="lazy"
+            src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?w=1000&h=750&fit=crop&crop=entropy"
+            alt="Fresh churros dusted with cinnamon sugar"
             onerror="this.onerror=null;this.src='images/brand/placeholder.svg'">
         </div>
-        <div class="space-y-6">
-          <span class="font-mono text-xs uppercase tracking-wider text-cm-blue-dark/50">Our craft</span>
+        <div class="space-y-6 relative">
+          <svg viewBox="0 0 120 40" class="doodle-drift absolute -top-8 left-0 w-20 text-cm-blue-light opacity-70 hidden md:block" style="--r:-3deg" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"><path d="M6 28 C 26 6, 46 6, 60 22 S 96 38, 114 14"/></svg>
           <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-cm-blue-dark text-pretty">Crispy fresh. Made with love. Since 1997.</h2>
           <p class="font-body text-lg text-cm-blue-dark/70 leading-relaxed">
             We started in Caracas with one shop, one fryer, and one secret formula. That formula hasn't changed. Every churro is fried fresh to order, the same way in every store.
           </p>
-          <a href="about.html" class="inline-flex items-center gap-2 font-display font-semibold text-cm-blue hover:text-cm-blue-deep transition-colors">
+          <a href="about.html" class="inline-flex items-center gap-2 font-display font-semibold text-cm-blue hover:text-cm-blue-deep transition-colors rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">
             Read our story <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ============ FEATURED PRODUCTS ============ -->
-    <section class="py-16 md:py-24 bg-cm-blue-bg">
+    <!-- ============ FEATURED PRODUCTS (asymmetric) ============ -->
+    <section class="py-16 md:py-24 bg-cm-blue-bg overflow-hidden">
       <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
-          <div class="space-y-3">
-            <span class="font-mono text-xs uppercase tracking-wider text-cm-blue-dark/50">The menu</span>
-            <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-cm-blue-dark">What people drive for.</h2>
-          </div>
-          <a href="menu.html" class="inline-flex items-center gap-2 font-display font-semibold text-cm-blue hover:text-cm-blue-deep transition-colors whitespace-nowrap">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 reveal">
+          <h2 class="font-display text-3xl md:text-5xl font-bold tracking-tight text-cm-blue-dark text-balance">What people drive for.</h2>
+          <a href="menu.html" class="inline-flex items-center gap-2 font-display font-semibold text-cm-blue hover:text-cm-blue-deep transition-colors whitespace-nowrap rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">
             See the full menu <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
-        <div id="featured-products" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- rendered from data/menu.json -->
+        <div id="featured-products" class="grid grid-cols-1 lg:grid-cols-12 gap-6 reveal reveal-delay-1">
+          <!-- rendered from data/menu.json (asymmetric: one big, two small) -->
         </div>
       </div>
     </section>
@@ -142,51 +161,48 @@
     <!-- ============ LOCATIONS PREVIEW ============ -->
     <section class="py-16 md:py-24 lg:py-32">
       <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
-          <div class="space-y-3">
-            <span class="font-mono text-xs uppercase tracking-wider text-cm-blue-dark/50">Find us</span>
-            <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-cm-blue-dark">Find us in 10 countries.</h2>
-          </div>
-          <a href="stores.html" class="inline-flex items-center gap-2 font-display font-semibold text-cm-blue hover:text-cm-blue-deep transition-colors whitespace-nowrap">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 reveal">
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-cm-blue-dark">Find us in 10 countries.</h2>
+          <a href="stores.html" class="inline-flex items-center gap-2 font-display font-semibold text-cm-blue hover:text-cm-blue-deep transition-colors whitespace-nowrap rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">
             Find your nearest store <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
-        <div id="countries-preview" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div id="countries-preview" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 reveal reveal-delay-1">
           <!-- rendered from data/countries.json -->
         </div>
       </div>
     </section>
 
-    <!-- ============ FRANCHISE TEASER ============ -->
-    <section class="py-16 md:py-24 lg:py-32 bg-cm-blue-dark text-white">
+    <!-- ============ FRANCHISE TEASER (one low-pressure section) ============ -->
+    <section class="py-16 md:py-24 lg:py-32 bg-cm-blue-dark text-white relative overflow-hidden">
+      <svg viewBox="0 0 100 100" class="doodle-drift absolute top-12 right-10 w-14 h-14 text-cm-yellow opacity-80 hidden md:block" style="--r:8deg" aria-hidden="true"><path d="M50 6 C53 30 70 47 94 50 C70 53 53 70 50 94 C47 70 30 53 6 50 C30 47 47 30 50 6 Z" fill="currentColor"/></svg>
       <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          <div class="space-y-6">
-            <span class="font-mono text-xs uppercase tracking-wider text-cm-yellow">The opportunity</span>
-            <h2 class="font-display text-3xl md:text-5xl font-bold tracking-tight">Join the world's largest churro franchise.</h2>
+          <div class="space-y-6 reveal">
+            <h2 class="font-display text-3xl md:text-5xl font-bold tracking-tight text-balance">Want one of your own?</h2>
             <p class="font-body text-lg text-white/70 leading-relaxed max-w-xl">
-              28 years of proven unit economics. A brand customers already know. We are expanding, and we are looking for operators.
+              28 years in, the model works. If you have ever thought about running your own ChurroManía, we would love to talk. No pressure, just a conversation.
             </p>
-            <a href="franchise.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-cm-yellow text-cm-blue-dark font-display font-bold rounded-xl hover:bg-cm-orange transition-all duration-200 shadow-lg shadow-cm-yellow/20">
+            <a href="franchise.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-cm-yellow text-cm-blue-dark font-display font-bold rounded-xl hover:bg-cm-orange active:scale-95 transition-all duration-200 shadow-lg shadow-cm-yellow/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-yellow/60">
               Explore Franchising <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-2 gap-4 reveal reveal-delay-1">
             <div class="rounded-2xl bg-white/5 border border-white/10 p-6 md:p-8">
-              <div class="font-display text-4xl md:text-5xl font-bold text-cm-yellow tracking-tight">120+</div>
+              <div class="font-display text-4xl md:text-5xl font-bold text-cm-yellow tracking-tight tnum"><span data-count="120" data-plus="true">120+</span></div>
               <div class="font-body text-white/70 mt-2">stores and counting</div>
             </div>
-            <div class="rounded-2xl bg-white/5 border border-white/10 p-6 md:p-8">
-              <div class="font-display text-4xl md:text-5xl font-bold text-cm-yellow tracking-tight">10</div>
+            <div class="rounded-2xl bg-white/5 border border-white/10 p-6 md:p-8 md:translate-y-6">
+              <div class="font-display text-4xl md:text-5xl font-bold text-cm-yellow tracking-tight tnum"><span data-count="10">10</span></div>
               <div class="font-body text-white/70 mt-2">countries we operate in</div>
             </div>
             <div class="rounded-2xl bg-white/5 border border-white/10 p-6 md:p-8">
-              <div class="font-display text-4xl md:text-5xl font-bold text-cm-yellow tracking-tight">28</div>
+              <div class="font-display text-4xl md:text-5xl font-bold text-cm-yellow tracking-tight tnum"><span data-count="28">28</span></div>
               <div class="font-body text-white/70 mt-2">years in business</div>
             </div>
-            <div class="rounded-2xl bg-white/5 border border-white/10 p-6 md:p-8">
+            <div class="rounded-2xl bg-white/5 border border-white/10 p-6 md:p-8 md:translate-y-6">
               <div class="font-display text-4xl md:text-5xl font-bold text-cm-yellow tracking-tight">1997</div>
-              <div class="font-body text-white/70 mt-2">still the same recipe</div>
+              <div class="font-body text-white/70 mt-2">same formula, every store</div>
             </div>
           </div>
         </div>
@@ -196,16 +212,13 @@
     <!-- ============ LATEST STORIES ============ -->
     <section class="py-16 md:py-24 lg:py-32">
       <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
-          <div class="space-y-3">
-            <span class="font-mono text-xs uppercase tracking-wider text-cm-blue-dark/50">Stories</span>
-            <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-cm-blue-dark">Behind the brand.</h2>
-          </div>
-          <a href="blog.html" class="inline-flex items-center gap-2 font-display font-semibold text-cm-blue hover:text-cm-blue-deep transition-colors whitespace-nowrap">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12 reveal">
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-cm-blue-dark">Behind the brand.</h2>
+          <a href="blog.html" class="inline-flex items-center gap-2 font-display font-semibold text-cm-blue hover:text-cm-blue-deep transition-colors whitespace-nowrap rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">
             Read all stories <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
-        <div id="latest-stories" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div id="latest-stories" class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal reveal-delay-1">
           <!-- rendered from data/blog.json -->
         </div>
       </div>
@@ -218,13 +231,14 @@
     <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <div class="font-display font-bold text-2xl mb-4">ChurroManía</div>
+          <div class="font-display font-bold text-2xl mb-4" translate="no">ChurroManía</div>
           <p class="text-white/70 text-sm">28 years of churros. 120+ stores. 10 countries.</p>
         </div>
         <div>
           <h2 class="font-mono text-xs uppercase tracking-wider text-cm-yellow mb-4">Explore</h2>
           <ul class="space-y-2 text-sm text-white/70">
             <li><a href="menu.html" class="hover:text-white">Menu</a></li>
+            <li><a href="delivery.html" class="hover:text-white">Delivery</a></li>
             <li><a href="stores.html" class="hover:text-white">Find a Store</a></li>
             <li><a href="about.html" class="hover:text-white">Our Story</a></li>
             <li><a href="blog.html" class="hover:text-white">Stories</a></li>
@@ -248,7 +262,7 @@
       </div>
       <div class="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
         <p class="text-sm text-white/50">&copy; 2026 ChurroManía. All rights reserved.</p>
-        <p class="font-mono text-xs uppercase tracking-wider text-white/40">Made with care since 1997</p>
+        <p class="font-mono text-xs uppercase tracking-wider text-white/40">Made with love since 1997</p>
       </div>
     </div>
   </footer>
@@ -256,7 +270,7 @@
   <script src="js/data.js"></script>
   <script src="js/nav.js"></script>
   <script>
-    // Home page rendering: featured products, country preview, latest stories.
+    // Home page rendering: featured products (asymmetric), countries, latest stories.
     (async function () {
       const [menu, countries, blog] = await Promise.all([
         loadData('data/menu.json'),
@@ -264,7 +278,6 @@
         loadData('data/blog.json'),
       ]);
 
-      // Featured products: first bestseller-tagged item from the first 3 categories.
       const featured = document.getElementById('featured-products');
       if (featured && menu) {
         const picks = [];
@@ -273,34 +286,47 @@
           if (best) picks.push(best);
           if (picks.length === 3) break;
         }
-        featured.innerHTML = picks.map(item => `
-          <article class="group rounded-2xl bg-white border border-cm-blue-dark/5 overflow-hidden hover:shadow-lg hover:shadow-cm-blue/5 transition-all duration-200">
-            <div class="aspect-[4/3] bg-cm-blue-pale overflow-hidden">
-              ${cmImg(item.image, item.name, 'w-full h-full object-cover group-hover:scale-105 transition-transform duration-300')}
+        const big = picks[0];
+        const smalls = picks.slice(1, 3);
+        featured.innerHTML = `
+          <article class="group lg:col-span-7 rounded-2xl bg-white border border-cm-blue-dark/5 overflow-hidden hover:shadow-xl hover:shadow-cm-blue/10 hover:-translate-y-1 transition-all duration-300">
+            <div class="aspect-[16/10] bg-cm-blue-pale overflow-hidden">
+              ${cmImg(big.image, big.name, 'w-full h-full object-cover group-hover:scale-105 transition-transform duration-500')}
             </div>
-            <div class="p-6">
-              <h3 class="font-display text-xl font-bold text-cm-blue-dark">${esc(item.name)}</h3>
-              <p class="font-body text-cm-blue-dark/70 mt-2">${esc(item.description)}</p>
+            <div class="p-8">
+              <span class="inline-block font-mono text-[10px] uppercase tracking-wider text-cm-blue-dark bg-cm-yellow px-2 py-1 rounded-full mb-3">Bestseller</span>
+              <h3 class="font-display text-2xl md:text-3xl font-bold text-cm-blue-dark">${esc(big.name)}</h3>
+              <p class="font-body text-cm-blue-dark/70 mt-2 max-w-md">${esc(big.description)}</p>
             </div>
-          </article>`).join('');
+          </article>
+          <div class="lg:col-span-5 grid gap-6">
+            ${smalls.map(item => `
+              <article class="group rounded-2xl bg-cm-cream overflow-hidden flex items-center gap-4 p-4 hover:-translate-y-1 hover:shadow-lg hover:shadow-cm-blue/5 transition-all duration-300">
+                <div class="w-28 h-28 shrink-0 rounded-xl bg-cm-blue-pale overflow-hidden">
+                  ${cmImg(item.image, item.name, 'w-full h-full object-cover group-hover:scale-105 transition-transform duration-500')}
+                </div>
+                <div class="min-w-0">
+                  <h3 class="font-display text-lg font-bold text-cm-blue-dark">${esc(item.name)}</h3>
+                  <p class="font-body text-sm text-cm-blue-dark/70 mt-1 line-clamp-3">${esc(item.description)}</p>
+                </div>
+              </article>`).join('')}
+          </div>`;
       }
 
-      // Countries preview.
       const cp = document.getElementById('countries-preview');
       if (cp && countries) {
         cp.innerHTML = countries.map(c => `
-          <a href="stores.html" class="rounded-2xl bg-cm-cream border border-cm-blue-dark/5 p-5 hover:shadow-lg hover:shadow-cm-blue/5 hover:-translate-y-0.5 transition-all duration-200 block">
+          <a href="stores.html" class="rounded-2xl bg-cm-cream border border-cm-blue-dark/5 p-5 hover:shadow-lg hover:shadow-cm-blue/5 hover:-translate-y-1 transition-all duration-200 block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">
             <div class="text-3xl mb-2">${esc(c.flag)}</div>
             <div class="font-display font-bold text-cm-blue-dark">${esc(c.name)}</div>
-            <div class="font-mono text-xs uppercase tracking-wider text-cm-blue-dark/50 mt-1">${esc(c.stores)} stores</div>
+            <div class="font-mono text-xs uppercase tracking-wider text-cm-blue-dark/50 mt-1 tnum">${esc(c.stores)} stores</div>
           </a>`).join('');
       }
 
-      // Latest stories: first 3 posts.
       const ls = document.getElementById('latest-stories');
       if (ls && blog) {
         ls.innerHTML = blog.posts.slice(0, 3).map(post => `
-          <a href="${esc(post.url)}" class="group rounded-2xl bg-white border border-cm-blue-dark/5 overflow-hidden hover:shadow-lg hover:shadow-cm-blue/5 transition-all duration-200 block">
+          <a href="${esc(post.url)}" class="group rounded-2xl bg-white border border-cm-blue-dark/5 overflow-hidden hover:shadow-lg hover:shadow-cm-blue/5 hover:-translate-y-1 transition-all duration-200 block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">
             <div class="aspect-[16/9] bg-cm-blue-pale overflow-hidden">
               ${cmImg(post.image, post.title, 'w-full h-full object-cover group-hover:scale-105 transition-transform duration-300')}
             </div>
@@ -313,6 +339,7 @@
       }
     })();
   </script>
+  <script src="js/motion.js"></script>
 
   <script type="application/ld+json">
   {
@@ -337,7 +364,7 @@
         "name": "ChurroManía",
         "servesCuisine": "Churros, Desserts",
         "url": "https://teoria-teoria.github.io/churromania-site/",
-        "image": "https://teoria-teoria.github.io/churromania-site/images/hero/hero-churros.jpg",
+        "image": "https://images.unsplash.com/photo-1541544741938-0af808871cc0?w=1200",
         "priceRange": "$",
         "description": "Crispy fresh churros, fried to order. Crispy Manía, Twist Manía, Churro Bites, Big Manía, dips, shakes, and coffee."
       }
