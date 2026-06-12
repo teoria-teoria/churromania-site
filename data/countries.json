@@ -1,0 +1,12 @@
+[
+  { "name": "Venezuela", "code": "VE", "stores": 45, "since": 1997, "flag": "🇻🇪" },
+  { "name": "United States", "code": "US", "stores": 18, "since": 2008, "flag": "🇺🇸" },
+  { "name": "Colombia", "code": "CO", "stores": 14, "since": 2003, "flag": "🇨🇴" },
+  { "name": "Mexico", "code": "MX", "stores": 12, "since": 2005, "flag": "🇲🇽" },
+  { "name": "Spain", "code": "ES", "stores": 9, "since": 2015, "flag": "🇪🇸" },
+  { "name": "Panama", "code": "PA", "stores": 7, "since": 2009, "flag": "🇵🇦" },
+  { "name": "Dominican Republic", "code": "DO", "stores": 6, "since": 2011, "flag": "🇩🇴" },
+  { "name": "Ecuador", "code": "EC", "stores": 5, "since": 2014, "flag": "🇪🇨" },
+  { "name": "Peru", "code": "PE", "stores": 4, "since": 2017, "flag": "🇵🇪" },
+  { "name": "Chile", "code": "CL", "stores": 3, "since": 2019, "flag": "🇨🇱" }
+]

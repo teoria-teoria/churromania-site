@@ -1,0 +1,50 @@
+{
+  "_note": "Sample stories for the v1 listing. No individual post pages yet (v1.1). Drop cover images into images/blog/ with these filenames or update the paths.",
+  "posts": [
+    {
+      "id": "world-record-2023",
+      "title": "How we fried the world's longest churro",
+      "excerpt": "In 2023 our team set the Guinness World Record. Here is how a single churro stretched past every record before it.",
+      "date": "2023-08-15",
+      "category": "Behind the Brand",
+      "image": "images/blog/world-record.jpg",
+      "url": "#"
+    },
+    {
+      "id": "since-1997",
+      "title": "One shop, one fryer, one recipe",
+      "excerpt": "The recipe we opened with in Caracas in 1997 is the same one in every store today. We kept it on purpose.",
+      "date": "2024-02-10",
+      "category": "Behind the Brand",
+      "image": "images/blog/since-1997.jpg",
+      "url": "#"
+    },
+    {
+      "id": "dulce-de-leche",
+      "title": "Why dulce de leche is our house dip",
+      "excerpt": "Thick, slow, and impossible to improve on. A short love letter to the dip that outsells the rest.",
+      "date": "2024-05-22",
+      "category": "Recipes",
+      "image": "images/blog/dulce-de-leche.jpg",
+      "url": "#"
+    },
+    {
+      "id": "franchise-spain",
+      "title": "From Caracas to Gran Vía",
+      "excerpt": "How a franchise partner brought ChurroManía to the middle of Madrid, and what it took to open.",
+      "date": "2024-09-30",
+      "category": "Franchise Stories",
+      "image": "images/blog/franchise-spain.jpg",
+      "url": "#"
+    },
+    {
+      "id": "twist-mania-launch",
+      "title": "Meet Twist Manía",
+      "excerpt": "Filled churros, twisted by hand. A look at the line that put the filling front and center.",
+      "date": "2025-01-18",
+      "category": "Sweet Updates",
+      "image": "images/blog/twist-mania.jpg",
+      "url": "#"
+    }
+  ]
+}

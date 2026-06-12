@@ -1,0 +1,20 @@
+/* tokens.css — ChurroManía brand tokens as CSS variables.
+   Tailwind already has these via the config; exposed here as :root vars too
+   for any direct CSS use. Loaded before the compiled styles.css. */
+
+:root {
+  --cm-blue: #116BCE;
+  --cm-blue-dark: #11345A;
+  --cm-blue-deep: #135495;
+  --cm-blue-light: #28B2FF;
+  --cm-blue-pale: #D8F3FF;
+  --cm-blue-bg: #EDFAFF;
+  --cm-yellow: #FFDC10;
+  --cm-yellow-warm: #F9B406;
+  --cm-orange: #F79200;
+  --cm-cream: #FAFAF7;
+
+  --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'Lexend Deca', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}

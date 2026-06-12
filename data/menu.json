@@ -1,0 +1,236 @@
+{
+  "_note": "Product-line descriptions are inferred commercial copy. ChurroManía product team to review/correct names and details. Image paths point to images/churro-products/<line>/ and images/menu/<cat>/ — drop real photos there with these filenames, or update the paths.",
+  "categories": [
+    {
+      "id": "crispy-mania",
+      "name": "Crispy Manía",
+      "description": "The original. Hand-rolled, fried fresh, dusted in cinnamon sugar.",
+      "items": [
+        {
+          "id": "crispy-original",
+          "name": "Original",
+          "description": "Our signature churro, straight out of the fryer and rolled in cinnamon sugar.",
+          "image": "images/churro-products/crispy-mania/original.jpg",
+          "tags": ["bestseller", "classic"]
+        },
+        {
+          "id": "crispy-chocolate",
+          "name": "Chocolate Drizzle",
+          "description": "Crispy churro finished with a ribbon of warm chocolate.",
+          "image": "images/churro-products/crispy-mania/chocolate-drizzle.jpg",
+          "tags": ["classic"]
+        },
+        {
+          "id": "crispy-dulce",
+          "name": "Dulce de Leche Drizzle",
+          "description": "Cinnamon sugar churro under a sweep of dulce de leche.",
+          "image": "images/churro-products/crispy-mania/dulce-drizzle.jpg",
+          "tags": ["fan-favorite"]
+        },
+        {
+          "id": "crispy-trio",
+          "name": "Crispy Trio",
+          "description": "Three classic churros, one order. Made to share, usually not.",
+          "image": "images/churro-products/crispy-mania/crispy-trio.jpg",
+          "tags": ["sharing"]
+        }
+      ]
+    },
+    {
+      "id": "twist-mania",
+      "name": "Twist Manía",
+      "description": "Filled churros, twisted by hand. The center is the whole point.",
+      "items": [
+        {
+          "id": "twist-dulce",
+          "name": "Dulce de Leche Filled",
+          "description": "A long twist packed with dulce de leche from end to end.",
+          "image": "images/churro-products/twist-mania/dulce-filled.jpg",
+          "tags": ["bestseller"]
+        },
+        {
+          "id": "twist-chocolate",
+          "name": "Chocolate Stuffed",
+          "description": "Warm chocolate sealed inside a fresh-fried twist.",
+          "image": "images/churro-products/twist-mania/chocolate-stuffed.jpg",
+          "tags": ["classic"]
+        },
+        {
+          "id": "twist-strawberry",
+          "name": "Strawberry Cream",
+          "description": "Strawberry cream filling, cinnamon sugar outside.",
+          "image": "images/churro-products/twist-mania/strawberry-cream.jpg",
+          "tags": []
+        },
+        {
+          "id": "twist-cookies",
+          "name": "Cookies & Cream",
+          "description": "Cookies and cream filling for the dessert maximalists.",
+          "image": "images/churro-products/twist-mania/cookies-cream.jpg",
+          "tags": ["new"]
+        }
+      ]
+    },
+    {
+      "id": "churro-bites",
+      "name": "Churro Bites",
+      "description": "Bite-size churros by the cup. Pop, dip, repeat.",
+      "items": [
+        {
+          "id": "bites-classic",
+          "name": "Classic Bites",
+          "description": "A cup of warm cinnamon sugar bites. The road-trip order.",
+          "image": "images/churro-products/churro-bites/classic-bites.jpg",
+          "tags": ["bestseller", "sharing"]
+        },
+        {
+          "id": "bites-choco",
+          "name": "Choco Bites",
+          "description": "Bites tossed in cocoa, built for dipping.",
+          "image": "images/churro-products/churro-bites/choco-bites.jpg",
+          "tags": []
+        },
+        {
+          "id": "bites-bucket",
+          "name": "Bites Bucket",
+          "description": "The big cup. Two dips included. Share it or don't.",
+          "image": "images/churro-products/churro-bites/bites-bucket.jpg",
+          "tags": ["sharing"]
+        }
+      ]
+    },
+    {
+      "id": "big-mania",
+      "name": "Big Manía",
+      "description": "Oversized churros built to share. A little bit of the world-record energy.",
+      "items": [
+        {
+          "id": "big-one",
+          "name": "The Big One",
+          "description": "One giant churro, cinnamon sugar, two dips. Bring friends.",
+          "image": "images/churro-products/big-mania/the-big-one.jpg",
+          "tags": ["sharing", "fan-favorite"]
+        },
+        {
+          "id": "big-twist",
+          "name": "Family Twist",
+          "description": "A jumbo filled twist made for the table.",
+          "image": "images/churro-products/big-mania/family-twist.jpg",
+          "tags": ["sharing"]
+        },
+        {
+          "id": "big-platter",
+          "name": "Churro Platter",
+          "description": "A spread of crispy, filled, and bites with a row of dips.",
+          "image": "images/churro-products/big-mania/churro-platter.jpg",
+          "tags": ["sharing"]
+        }
+      ]
+    },
+    {
+      "id": "dips",
+      "name": "Dips & Sauces",
+      "description": "Pick your dip. Or two. We won't judge.",
+      "items": [
+        {
+          "id": "dip-dulce",
+          "name": "Dulce de Leche",
+          "description": "Thick, slow, classic. The house dip.",
+          "image": "images/menu/dips/dulce.jpg",
+          "tags": ["bestseller"]
+        },
+        {
+          "id": "dip-chocolate",
+          "name": "Chocolate",
+          "description": "Warm melted chocolate for serious dunking.",
+          "image": "images/menu/dips/chocolate.jpg",
+          "tags": []
+        },
+        {
+          "id": "dip-cream-cheese",
+          "name": "Cream Cheese",
+          "description": "Sweet cream cheese, a quiet favorite.",
+          "image": "images/menu/dips/cream-cheese.jpg",
+          "tags": []
+        },
+        {
+          "id": "dip-nutella",
+          "name": "Hazelnut",
+          "description": "Hazelnut chocolate spread, warmed for dipping.",
+          "image": "images/menu/dips/hazelnut.jpg",
+          "tags": ["fan-favorite"]
+        }
+      ]
+    },
+    {
+      "id": "shakes",
+      "name": "Shakes & Drinks",
+      "description": "Cold, thick, and made to go with a churro.",
+      "items": [
+        {
+          "id": "shake-vanilla",
+          "name": "Vanilla Shake",
+          "description": "Classic vanilla, blended thick.",
+          "image": "images/menu/shakes/vanilla.jpg",
+          "tags": []
+        },
+        {
+          "id": "shake-chocolate",
+          "name": "Chocolate Shake",
+          "description": "Deep chocolate shake, churro on the side.",
+          "image": "images/menu/shakes/chocolate.jpg",
+          "tags": ["bestseller"]
+        },
+        {
+          "id": "shake-strawberry",
+          "name": "Strawberry Shake",
+          "description": "Real strawberry, bright and cold.",
+          "image": "images/menu/shakes/strawberry.jpg",
+          "tags": []
+        },
+        {
+          "id": "drink-lemonade",
+          "name": "Lemonade",
+          "description": "Fresh-squeezed, just sweet enough.",
+          "image": "images/menu/shakes/lemonade.jpg",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "coffee",
+      "name": "Coffee",
+      "description": "Latin coffee culture, churro-ready.",
+      "items": [
+        {
+          "id": "coffee-espresso",
+          "name": "Espresso",
+          "description": "A short, strong shot to balance the sugar.",
+          "image": "images/menu/coffee/espresso.jpg",
+          "tags": []
+        },
+        {
+          "id": "coffee-iced-latte",
+          "name": "Iced Latte",
+          "description": "Cold milk, smooth espresso, over ice.",
+          "image": "images/menu/coffee/iced-latte.jpg",
+          "tags": ["bestseller"]
+        },
+        {
+          "id": "coffee-cappuccino",
+          "name": "Cappuccino",
+          "description": "Espresso and steamed milk, dusted with cinnamon.",
+          "image": "images/menu/coffee/cappuccino.jpg",
+          "tags": []
+        },
+        {
+          "id": "coffee-cortado",
+          "name": "Cortado",
+          "description": "Equal parts espresso and warm milk.",
+          "image": "images/menu/coffee/cortado.jpg",
+          "tags": []
+        }
+      ]
+    }
+  ]
+}

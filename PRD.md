@@ -9,13 +9,13 @@ status: draft
 
 ## 1. overview
 
-we're rebuilding churromania.com. the current site is dated, not ada accessible, and has no real lead funnel for franchise inquiries. ChurroMania has been around 30+ years with 140+ stores across 10 countries, so the new site has to carry that heritage while looking modern. v1 is front-end only: html, css, vanilla js, deployed to GitHub Pages. the priority is accessibility and a clean franchise funnel.
+we're rebuilding churromania.com. the current site is dated, not ada accessible, and has no real lead funnel for franchise inquiries. ChurroMania has been around 28 years (founded 1997) with 120+ stores across 10 countries, so the new site has to carry that heritage while looking modern. v1 is front-end only: html, css, vanilla js, deployed to GitHub Pages. the priority is accessibility and a clean franchise funnel.
 
 ## 2. goals
 
 - ada compliant. mitigates legal risk from accessibility lawsuits.
 - convert prospective franchisees into qualified leads.
-- modernize the brand presentation without losing 30 years of heritage.
+- modernize the brand presentation without losing 28 years of heritage.
 - responsive across desktop, tablet, mobile.
 - fast page load.
 - standard customer functions (menu, locations, contact) work cleanly.
@@ -58,7 +58,7 @@ what they need: fast access to menu, locations, basic brand story.
 ## 6. content requirements
 
 ### home page
-- hero section: brand statement, "30+ years, 140+ stores, 10 countries" line, franchise cta button.
+- hero section: brand statement, "28 years, 120+ stores, 10 countries" line, franchise cta button.
 - heritage section: short brand story.
 - product highlight: 3-4 signature items pulled from menu.
 - locations preview: countries with store counts.

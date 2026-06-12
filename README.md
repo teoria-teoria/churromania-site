@@ -6,7 +6,7 @@ A rebuild of the churromania.com website. The current site is outdated and not a
 
 ## Client
 
-ChurroMania, a churro franchise with 30+ years in business and 140+ locations across 10 countries.
+ChurroMania, a churro franchise with 28 years in business (founded 1997) and 120+ locations across 10 countries.
 
 ## Links
 
