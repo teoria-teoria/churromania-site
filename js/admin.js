@@ -1,4 +1,4 @@
-// admin.js — v1 admin panel. Preview-and-export only. No real backend.
+// admin.js - v1 admin panel. Preview-and-export only. No real backend.
 // Auth is a client-side password gate (NOT real security). Replace with proper
 // auth + Supabase in v1.1. Relies on data.js (loadData, esc).
 

@@ -1,4 +1,4 @@
-// search.js — stores page. Renders the country breakdown + full store list,
+// search.js - stores page. Renders the country breakdown + full store list,
 // and wires Fuse.js fuzzy search over the stores. Relies on data.js (loadData, esc).
 
 (async function () {

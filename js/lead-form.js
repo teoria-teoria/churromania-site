@@ -1,4 +1,4 @@
-// lead-form.js — franchise inquiry form.
+// lead-form.js - franchise inquiry form.
 // v1: intercept submit, show an inline success state, log the payload.
 // The form still posts (best-effort) to the class echo endpoint so the data
 // goes somewhere. Swap the action for a real CRM webhook in v1.1.
@@ -12,7 +12,7 @@
     e.preventDefault();
 
     const data = Object.fromEntries(new FormData(form).entries());
-    console.log('Franchise inquiry (v1 — echoes to class endpoint):', data);
+    console.log('Franchise inquiry (v1 - echoes to class endpoint):', data);
 
     // Best-effort send to the configured action. no-cors: we don't read the
     // response, we just hand it off. Failure here never blocks the success UI.

@@ -1,4 +1,4 @@
-// nav.js — sticky header state + mobile menu toggle. Shared across every page.
+// nav.js - sticky header state + mobile menu toggle. Shared across every page.
 
 (function () {
   const header = document.getElementById('site-header');

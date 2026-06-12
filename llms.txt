@@ -4,11 +4,11 @@
 
 ## About
 
-ChurroManía is a quick-service restaurant franchise specializing in churros, the fried dough pastry from Spain and Latin America. Since 1997, the company has grown from a single store in Caracas to 120+ locations across Venezuela, the United States, Mexico, Colombia, Spain, Panama, Dominican Republic, Ecuador, Peru, and Chile. Every churro is hand-rolled and fried to order, using the same recipe the company opened with in 1997.
+ChurroManía is a quick-service restaurant franchise specializing in churros, the fried dough pastry from Spain and Latin America. Since 1997, the company has grown from a single store in Caracas to 120+ locations across Venezuela, the United States, Mexico, Colombia, Spain, Panama, Dominican Republic, Ecuador, Peru, and Chile. Every churro is fried fresh to order, using the same recipe the company opened with in 1997.
 
 ## Products
 
-- Crispy Manía: classic churros, hand-rolled, fried fresh, dusted with cinnamon sugar
+- Crispy Manía: classic churros, crispy fresh, fried to order, dusted with cinnamon sugar
 - Twist Manía: filled churros (dulce de leche, chocolate, strawberry cream, cookies and cream)
 - Churro Bites: bite-size churros by the cup
 - Big Manía: oversized, shareable churros

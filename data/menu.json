@@ -1,10 +1,10 @@
 {
-  "_note": "Product-line descriptions are inferred commercial copy. ChurroManía product team to review/correct names and details. Image paths point to images/churro-products/<line>/ and images/menu/<cat>/ — drop real photos there with these filenames, or update the paths.",
+  "_note": "Product-line descriptions are inferred commercial copy. ChurroManía product team to review/correct names and details. Image paths point to images/churro-products/<line>/ and images/menu/<cat>/ - drop real photos there with these filenames, or update the paths.",
   "categories": [
     {
       "id": "crispy-mania",
       "name": "Crispy Manía",
-      "description": "The original. Hand-rolled, fried fresh, dusted in cinnamon sugar.",
+      "description": "The original. Crispy fresh, fried to order, dusted in cinnamon sugar.",
       "items": [
         {
           "id": "crispy-original",

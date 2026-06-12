@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-// ChurroManía — Tailwind config. Compiled locally to css/styles.css (no Play CDN).
+// ChurroManía - Tailwind config. Compiled locally to css/styles.css (no Play CDN).
 // Rebuild after markup changes:  npx tailwindcss@3 -i css/tailwind.in.css -o css/styles.css --minify
 module.exports = {
   content: ['./*.html', './js/**/*.js'],

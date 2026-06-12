@@ -136,7 +136,7 @@ Soft shadows. Layered backgrounds beat heavy shadows.
   </div>
   <div class="p-6">
     <h3 class="font-display text-xl font-bold text-cm-blue-dark">Original</h3>
-    <p class="font-body text-cm-blue-dark/70 mt-2">Hand-rolled, fried fresh, dusted with cinnamon sugar.</p>
+    <p class="font-body text-cm-blue-dark/70 mt-2">Crispy fresh, fried to order, dusted with cinnamon sugar.</p>
   </div>
 </article>
 ```

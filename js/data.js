@@ -1,4 +1,4 @@
-// data.js — shared helpers for loading JSON and rendering images safely.
+// data.js - shared helpers for loading JSON and rendering images safely.
 // Used across menu, stores, blog, home, admin. No framework.
 
 // Load a JSON file. Returns parsed data, or null on failure (logged, never throws).
