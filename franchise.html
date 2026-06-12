@@ -68,8 +68,8 @@
           ChurroManía is the #1 churros franchise on the planet. 100+ stores across the US and Latin America, a patented Churro Mix, and a model we have refined since 1997. We like to think big. Can you tell?
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#apply" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-cm-blue text-white font-display font-bold rounded-xl hover:bg-cm-blue-deep active:scale-95 transition-all duration-200 shadow-lg shadow-cm-blue/20 hover:shadow-xl hover:shadow-cm-blue/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40 focus-visible:ring-offset-2 focus-visible:ring-offset-cm-cream">
-            Apply Now <span aria-hidden="true">&rarr;</span>
+          <a href="#apply" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-cm-blue text-white font-display font-bold rounded-xl hover:bg-cm-blue-deep active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40 focus-visible:ring-offset-2 focus-visible:ring-offset-cm-cream">
+            Apply Now <span class="arrow" aria-hidden="true">&rarr;</span>
           </a>
           <a href="contact.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-cm-blue-dark border-2 border-cm-blue-dark/10 font-display font-semibold rounded-xl hover:border-cm-blue hover:text-cm-blue active:scale-95 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40">
             Talk to Us
@@ -140,79 +140,155 @@
       </div>
     </section>
 
-    <!-- ============ STORE FORMATS (asymmetric) ============ -->
-    <section class="py-16 md:py-24 bg-cm-blue-bg overflow-hidden">
+    <!-- ============ STORE FORMATS (bento, image + gradient) ============ -->
+    <section class="py-16 md:py-24 bg-cm-blue-bg">
       <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-cm-blue-dark mb-12 reveal">Where you can open one.</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <article class="md:col-span-2 relative rounded-2xl bg-cm-blue-dark text-white p-8 md:p-10 overflow-hidden reveal">
-            <svg viewBox="0 0 100 100" class="doodle-drift absolute -bottom-4 -right-2 w-24 h-24 text-cm-yellow/30" style="--r:0deg" aria-hidden="true"><path d="M50 6 C53 30 70 47 94 50 C70 53 53 70 50 94 C47 70 30 53 6 50 C30 47 47 30 50 6 Z" fill="currentColor"/></svg>
-            <div class="relative">
-              <div class="font-display text-2xl md:text-3xl font-bold">Walmart store</div>
-              <p class="font-body text-white/70 mt-3 max-w-md">High-traffic foot traffic, low overhead build. Our most accessible way into a proven retail audience.</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-cm-blue-dark mb-12 reveal text-balance">Where you can open one.</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 reveal reveal-delay-1">
+
+          <!-- Walmart (big) -->
+          <article class="group relative md:col-span-2 md:row-span-2 min-h-[16rem] md:min-h-[30rem] rounded-2xl overflow-hidden bg-cm-blue-dark">
+            <!-- drop a photo at images/storefronts/walmart/walmart.jpg -->
+            <img class="bento-img group-hover:scale-105 transition-transform duration-500" loading="lazy" alt="A ChurroManía inside a Walmart store" src="images/storefronts/walmart/walmart.jpg" onerror="this.onerror=null;this.style.display='none'">
+            <div class="bento-scrim"></div>
+            <div class="absolute inset-x-0 bottom-0 p-7 md:p-9">
+              <div class="font-mono text-xs uppercase tracking-wider text-cm-yellow mb-2">Most accessible</div>
+              <h3 class="font-display text-2xl md:text-4xl font-bold text-white">Walmart store</h3>
+              <p class="font-body text-white/80 mt-2 max-w-md">High foot traffic, low overhead build. The fastest way into a proven retail audience.</p>
             </div>
           </article>
-          <article class="rounded-2xl bg-white border border-cm-blue-dark/5 p-8 reveal reveal-delay-1">
-            <div class="font-display text-xl font-bold text-cm-blue-dark">Shopping centers</div>
-            <p class="font-body text-cm-blue-dark/70 mt-3">Community-anchored locations where regulars come back.</p>
+
+          <!-- Shopping centers (wide) -->
+          <article class="group relative md:col-span-2 min-h-[14rem] rounded-2xl overflow-hidden bg-cm-blue-dark">
+            <!-- drop a photo at images/storefronts/shopping-centers/shopping-centers.jpg -->
+            <img class="bento-img group-hover:scale-105 transition-transform duration-500" loading="lazy" alt="A ChurroManía in a shopping center" src="images/storefronts/shopping-centers/shopping-centers.jpg" onerror="this.onerror=null;this.style.display='none'">
+            <div class="bento-scrim"></div>
+            <div class="absolute inset-x-0 bottom-0 p-7">
+              <h3 class="font-display text-xl md:text-2xl font-bold text-white">Shopping centers</h3>
+              <p class="font-body text-white/80 mt-2">Community-anchored locations where regulars come back.</p>
+            </div>
           </article>
-          <article class="rounded-2xl bg-white border border-cm-blue-dark/5 p-8 reveal reveal-delay-1">
-            <div class="font-display text-xl font-bold text-cm-blue-dark">Mall store</div>
-            <p class="font-body text-cm-blue-dark/70 mt-3">Destination foot traffic, premium positioning.</p>
+
+          <!-- Mall -->
+          <article class="group relative min-h-[14rem] rounded-2xl overflow-hidden bg-cm-blue-dark">
+            <!-- drop a photo at images/storefronts/mall/mall.jpg -->
+            <img class="bento-img group-hover:scale-105 transition-transform duration-500" loading="lazy" alt="A ChurroManía mall store" src="images/storefronts/mall/mall.jpg" onerror="this.onerror=null;this.style.display='none'">
+            <div class="bento-scrim"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6">
+              <h3 class="font-display text-xl font-bold text-white">Mall store</h3>
+              <p class="font-body text-white/80 mt-2 text-sm">Destination traffic, premium positioning.</p>
+            </div>
           </article>
-          <article class="md:col-span-2 rounded-2xl bg-cm-cream p-8 md:p-10 rotate-[-1deg] hover:rotate-0 transition-transform duration-300 reveal reveal-delay-2">
-            <div class="font-display text-2xl md:text-3xl font-bold text-cm-blue-dark">Food truck</div>
-            <p class="font-body text-cm-blue-dark/70 mt-3 max-w-md">A flexible footprint for events and underserved markets. Take the churros to where the people are.</p>
+
+          <!-- Food truck -->
+          <article class="group relative min-h-[14rem] rounded-2xl overflow-hidden bg-cm-blue-dark">
+            <!-- drop a photo at images/storefronts/food-truck/food-truck.jpg -->
+            <img class="bento-img group-hover:scale-105 transition-transform duration-500" loading="lazy" alt="A ChurroManía food truck" src="images/storefronts/food-truck/food-truck.jpg" onerror="this.onerror=null;this.style.display='none'">
+            <div class="bento-scrim"></div>
+            <div class="absolute inset-x-0 bottom-0 p-6">
+              <h3 class="font-display text-xl font-bold text-white">Food truck</h3>
+              <p class="font-body text-white/80 mt-2 text-sm">Flexible footprint for events and new markets.</p>
+            </div>
           </article>
+
         </div>
       </div>
     </section>
 
-    <!-- ============ WHAT'S INCLUDED ============ -->
-    <section class="py-16 md:py-24 lg:py-32">
-      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-cm-blue-dark max-w-2xl mb-12 reveal">You are not doing this alone.</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal reveal-delay-1">
-          <div class="rounded-xl bg-cm-cream border border-cm-blue-dark/5 p-6 font-body text-cm-blue-dark/80">Site selection support</div>
-          <div class="rounded-xl bg-cm-cream border border-cm-blue-dark/5 p-6 font-body text-cm-blue-dark/80">Full training program</div>
-          <div class="rounded-xl bg-cm-cream border border-cm-blue-dark/5 p-6 font-body text-cm-blue-dark/80">Supply chain and sourcing</div>
-          <div class="rounded-xl bg-cm-cream border border-cm-blue-dark/5 p-6 font-body text-cm-blue-dark/80">Marketing playbooks and assets</div>
-          <div class="rounded-xl bg-cm-cream border border-cm-blue-dark/5 p-6 font-body text-cm-blue-dark/80">Ongoing operations support</div>
-          <div class="rounded-xl bg-cm-cream border border-cm-blue-dark/5 p-6 font-body text-cm-blue-dark/80">Point of sale and ordering tech</div>
-          <div class="rounded-xl bg-cm-cream border border-cm-blue-dark/5 p-6 font-body text-cm-blue-dark/80">Patented Churro Mix</div>
-          <div class="rounded-xl bg-cm-cream border border-cm-blue-dark/5 p-6 font-body text-cm-blue-dark/80">Grand opening support</div>
-          <div class="rounded-xl bg-cm-cream border border-cm-blue-dark/5 p-6 font-body text-cm-blue-dark/80">The secret formula since 1997</div>
+    <!-- ============ WHAT'S INCLUDED (auto-scrolling) ============ -->
+    <section class="py-16 md:py-24 lg:py-32 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 mb-12">
+        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-cm-blue-dark max-w-2xl reveal text-balance">You are not doing this alone.</h2>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__content">
+          <span class="px-6 py-3 rounded-full bg-cm-cream border border-cm-blue-dark/10 font-display font-semibold text-cm-blue-dark whitespace-nowrap">Site selection support</span>
+          <span class="px-6 py-3 rounded-full bg-cm-cream border border-cm-blue-dark/10 font-display font-semibold text-cm-blue-dark whitespace-nowrap">Full training program</span>
+          <span class="px-6 py-3 rounded-full bg-cm-cream border border-cm-blue-dark/10 font-display font-semibold text-cm-blue-dark whitespace-nowrap">Supply chain &amp; sourcing</span>
+          <span class="px-6 py-3 rounded-full bg-cm-cream border border-cm-blue-dark/10 font-display font-semibold text-cm-blue-dark whitespace-nowrap">Marketing playbooks</span>
+          <span class="px-6 py-3 rounded-full bg-cm-cream border border-cm-blue-dark/10 font-display font-semibold text-cm-blue-dark whitespace-nowrap">Patented Churro Mix</span>
+        </div>
+        <div class="marquee__content">
+          <span class="px-6 py-3 rounded-full bg-cm-cream border border-cm-blue-dark/10 font-display font-semibold text-cm-blue-dark whitespace-nowrap">Site selection support</span>
+          <span class="px-6 py-3 rounded-full bg-cm-cream border border-cm-blue-dark/10 font-display font-semibold text-cm-blue-dark whitespace-nowrap">Full training program</span>
+          <span class="px-6 py-3 rounded-full bg-cm-cream border border-cm-blue-dark/10 font-display font-semibold text-cm-blue-dark whitespace-nowrap">Supply chain &amp; sourcing</span>
+          <span class="px-6 py-3 rounded-full bg-cm-cream border border-cm-blue-dark/10 font-display font-semibold text-cm-blue-dark whitespace-nowrap">Marketing playbooks</span>
+          <span class="px-6 py-3 rounded-full bg-cm-cream border border-cm-blue-dark/10 font-display font-semibold text-cm-blue-dark whitespace-nowrap">Patented Churro Mix</span>
+        </div>
+      </div>
+
+      <div class="marquee marquee--reverse mt-4" aria-hidden="true">
+        <div class="marquee__content">
+          <span class="px-6 py-3 rounded-full bg-cm-blue-pale font-display font-semibold text-cm-blue-dark whitespace-nowrap">Ongoing operations support</span>
+          <span class="px-6 py-3 rounded-full bg-cm-blue-pale font-display font-semibold text-cm-blue-dark whitespace-nowrap">Point of sale &amp; ordering tech</span>
+          <span class="px-6 py-3 rounded-full bg-cm-blue-pale font-display font-semibold text-cm-blue-dark whitespace-nowrap">Grand opening support</span>
+          <span class="px-6 py-3 rounded-full bg-cm-blue-pale font-display font-semibold text-cm-blue-dark whitespace-nowrap">The secret formula since 1997</span>
+        </div>
+        <div class="marquee__content">
+          <span class="px-6 py-3 rounded-full bg-cm-blue-pale font-display font-semibold text-cm-blue-dark whitespace-nowrap">Ongoing operations support</span>
+          <span class="px-6 py-3 rounded-full bg-cm-blue-pale font-display font-semibold text-cm-blue-dark whitespace-nowrap">Point of sale &amp; ordering tech</span>
+          <span class="px-6 py-3 rounded-full bg-cm-blue-pale font-display font-semibold text-cm-blue-dark whitespace-nowrap">Grand opening support</span>
+          <span class="px-6 py-3 rounded-full bg-cm-blue-pale font-display font-semibold text-cm-blue-dark whitespace-nowrap">The secret formula since 1997</span>
+        </div>
+      </div>
+
+      <ul class="sr-only">
+        <li>Site selection support</li><li>Full training program</li><li>Supply chain and sourcing</li><li>Marketing playbooks and assets</li><li>Patented Churro Mix</li><li>Ongoing operations support</li><li>Point of sale and ordering tech</li><li>Grand opening support</li><li>The secret formula since 1997</li>
+      </ul>
+    </section>
+
+    <!-- ============ STEPS TO JOIN (scroll-pinned) ============ -->
+    <section class="steps-pinned bg-cm-blue-dark text-white relative lg:h-[440vh]" data-steps>
+      <div class="lg:sticky lg:top-0 lg:min-h-screen flex flex-col justify-center py-16 md:py-24">
+        <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 w-full">
+          <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight mb-3 text-balance">Steps to join the family.</h2>
+          <p class="font-body text-white/60 mb-10 hidden lg:block">Scroll to walk through the process, one step at a time.</p>
+
+          <div class="hidden lg:flex items-center gap-4 mb-12">
+            <div class="h-1 flex-1 rounded-full bg-white/10 overflow-hidden"><div id="steps-progress" class="h-full bg-cm-yellow transition-[width] duration-300" style="width:20%"></div></div>
+            <div class="font-mono text-sm text-cm-yellow tnum"><span id="steps-counter">01</span> / 05</div>
+          </div>
+
+          <ol class="space-y-6 lg:space-y-8">
+            <li class="step is-active" data-step="0">
+              <div class="flex gap-5"><div class="font-mono text-cm-yellow text-lg w-10 shrink-0">01</div><div><h3 class="font-display text-2xl font-bold mb-1">Intro Call</h3><p class="text-white/70 max-w-xl">If you qualify past our first stage, we start with an intro call to get to know each other.</p></div></div>
+            </li>
+            <li class="step" data-step="1">
+              <div class="flex gap-5"><div class="font-mono text-cm-yellow text-lg w-10 shrink-0">02</div><div><h3 class="font-display text-2xl font-bold mb-1">The FDD</h3><p class="text-white/70 max-w-xl">If we are a good match, we send you our Franchise Disclosure Document.</p></div></div>
+            </li>
+            <li class="step" data-step="2">
+              <div class="flex gap-5"><div class="font-mono text-cm-yellow text-lg w-10 shrink-0">03</div><div><h3 class="font-display text-2xl font-bold mb-1">Research</h3><p class="text-white/70 max-w-xl">After you review our FDD, you do further research to get the best possible understanding of your future franchise.</p></div></div>
+            </li>
+            <li class="step" data-step="3">
+              <div class="flex gap-5"><div class="font-mono text-cm-yellow text-lg w-10 shrink-0">04</div><div><h3 class="font-display text-2xl font-bold mb-1">Confirmation</h3><p class="text-white/70 max-w-xl">Once you decide to join the ChurroManía family, you start the process to become a franchisee.</p></div></div>
+            </li>
+            <li class="step" data-step="4">
+              <div class="flex gap-5"><div class="font-mono text-cm-yellow text-lg w-10 shrink-0">05</div><div><h3 class="font-display text-2xl font-bold mb-1">Starting Point</h3><p class="text-white/70 max-w-xl">You select your site with our team of experts, start building your location, and training.</p></div></div>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
 
-    <!-- ============ STEPS TO JOIN ============ -->
-    <section class="py-16 md:py-24 bg-cm-blue-dark text-white">
-      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight mb-12 reveal">Steps to join the family.</h2>
-        <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <li class="rounded-2xl bg-white/5 border border-white/10 p-8 reveal"><div class="font-mono text-cm-yellow text-sm mb-3">01</div><h3 class="font-display text-xl font-bold mb-2">Intro Call</h3><p class="text-white/70">If you qualify past our first stage, we start with an intro call to get to know each other.</p></li>
-          <li class="rounded-2xl bg-white/5 border border-white/10 p-8 reveal reveal-delay-1"><div class="font-mono text-cm-yellow text-sm mb-3">02</div><h3 class="font-display text-xl font-bold mb-2">The FDD</h3><p class="text-white/70">If we are a good match, we send you our Franchise Disclosure Document.</p></li>
-          <li class="rounded-2xl bg-white/5 border border-white/10 p-8 reveal reveal-delay-2"><div class="font-mono text-cm-yellow text-sm mb-3">03</div><h3 class="font-display text-xl font-bold mb-2">Research</h3><p class="text-white/70">After you review our FDD, you do further research to get the best possible understanding of your future franchise.</p></li>
-          <li class="rounded-2xl bg-white/5 border border-white/10 p-8 reveal"><div class="font-mono text-cm-yellow text-sm mb-3">04</div><h3 class="font-display text-xl font-bold mb-2">Confirmation</h3><p class="text-white/70">Once you decide to join the ChurroManía family, you start the process to become a franchisee.</p></li>
-          <li class="rounded-2xl bg-white/5 border border-white/10 p-8 reveal reveal-delay-1"><div class="font-mono text-cm-yellow text-sm mb-3">05</div><h3 class="font-display text-xl font-bold mb-2">Starting Point</h3><p class="text-white/70">You select your site with our team of experts, start building your location, and training.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- ============ MARKETS ============ -->
+    <!-- ============ MARKETS (US map) ============ -->
     <section class="py-16 md:py-24">
-      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 space-y-6 reveal">
-        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-cm-blue-dark max-w-2xl text-balance">Markets we are expanding in.</h2>
-        <p class="font-body text-lg text-cm-blue-dark/70 max-w-2xl">Currently expanding in Florida, Texas, California, Arizona, Spain, Mexico City, and additional Latin American markets. Somewhere else in mind? Tell us.</p>
-        <div class="flex flex-wrap gap-3 pt-2">
-          <span class="px-4 py-2 rounded-full bg-cm-blue-pale text-cm-blue-dark font-display font-semibold text-sm">Florida</span>
-          <span class="px-4 py-2 rounded-full bg-cm-blue-pale text-cm-blue-dark font-display font-semibold text-sm">Texas</span>
-          <span class="px-4 py-2 rounded-full bg-cm-blue-pale text-cm-blue-dark font-display font-semibold text-sm">California</span>
-          <span class="px-4 py-2 rounded-full bg-cm-blue-pale text-cm-blue-dark font-display font-semibold text-sm">Arizona</span>
-          <span class="px-4 py-2 rounded-full bg-cm-blue-pale text-cm-blue-dark font-display font-semibold text-sm">Spain</span>
-          <span class="px-4 py-2 rounded-full bg-cm-blue-pale text-cm-blue-dark font-display font-semibold text-sm">Mexico City</span>
-          <span class="px-4 py-2 rounded-full bg-cm-blue-pale text-cm-blue-dark font-display font-semibold text-sm">Latin America</span>
+      <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div class="space-y-6 reveal">
+            <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-cm-blue-dark max-w-md text-balance">Where we are expanding in the US.</h2>
+            <p class="font-body text-lg text-cm-blue-dark/70 max-w-md">We are actively signing operators in these markets right now. Somewhere else in mind? Tell us.</p>
+            <ul class="flex flex-wrap gap-3 pt-2">
+              <li class="flex items-center gap-2 px-4 py-2 rounded-full bg-cm-yellow text-cm-blue-dark font-display font-semibold text-sm"><span class="w-2 h-2 rounded-full bg-cm-blue-dark" aria-hidden="true"></span>Florida</li>
+              <li class="flex items-center gap-2 px-4 py-2 rounded-full bg-cm-yellow text-cm-blue-dark font-display font-semibold text-sm"><span class="w-2 h-2 rounded-full bg-cm-blue-dark" aria-hidden="true"></span>Texas</li>
+              <li class="flex items-center gap-2 px-4 py-2 rounded-full bg-cm-yellow text-cm-blue-dark font-display font-semibold text-sm"><span class="w-2 h-2 rounded-full bg-cm-blue-dark" aria-hidden="true"></span>California</li>
+              <li class="flex items-center gap-2 px-4 py-2 rounded-full bg-cm-yellow text-cm-blue-dark font-display font-semibold text-sm"><span class="w-2 h-2 rounded-full bg-cm-blue-dark" aria-hidden="true"></span>Arizona</li>
+            </ul>
+            <p class="font-body text-sm text-cm-blue-dark/50 max-w-md">Plus active international expansion across Spain, Mexico City, and Latin America.</p>
+          </div>
+          <div id="us-map" data-targets="ca,az,tx,fl" class="reveal reveal-delay-1">
+            <!-- US states map injected from images/us-map.svg by motion.js; targets highlighted -->
+          </div>
         </div>
       </div>
     </section>
@@ -282,7 +358,7 @@
           <p class="font-body text-lg text-cm-blue-dark/70">Tell us about yourself and where you want to operate. We read every inquiry.</p>
         </div>
 
-        <div id="lead-success" tabindex="-1" class="hidden rounded-2xl bg-cm-yellow/20 border border-cm-yellow p-8 shadow-lg shadow-cm-yellow/20 outline-none" aria-live="polite">
+        <div id="lead-success" tabindex="-1" class="hidden rounded-2xl bg-cm-yellow/20 border border-cm-yellow p-8 outline-none" aria-live="polite">
           <h3 class="font-display text-2xl font-bold text-cm-blue-dark">Got it. Thank you.</h3>
           <p class="font-body text-cm-blue-dark/80 mt-2">Your inquiry is in. Someone from our franchise team will be in touch. In the meantime, take a look at <a href="about.html" class="text-cm-blue font-semibold hover:underline">our story</a>.</p>
         </div>
@@ -339,8 +415,8 @@
             <textarea id="about" name="about" rows="4" class="w-full px-4 py-3 rounded-xl border border-cm-blue-dark/15 bg-white font-body text-cm-blue-dark focus:ring-2 focus:ring-cm-blue/30 focus:border-cm-blue outline-none transition-all"></textarea>
           </div>
 
-          <button type="submit" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-cm-blue text-white font-display font-bold rounded-xl hover:bg-cm-blue-deep active:scale-95 transition-all duration-200 shadow-lg shadow-cm-blue/20 hover:shadow-xl hover:shadow-cm-blue/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40 focus-visible:ring-offset-2 focus-visible:ring-offset-cm-cream">
-            Submit Inquiry <span aria-hidden="true">&rarr;</span>
+          <button type="submit" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-cm-blue text-white font-display font-bold rounded-xl hover:bg-cm-blue-deep active:scale-95 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cm-blue/40 focus-visible:ring-offset-2 focus-visible:ring-offset-cm-cream">
+            Submit Inquiry <span class="arrow" aria-hidden="true">&rarr;</span>
           </button>
         </form>
 

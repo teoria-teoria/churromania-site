@@ -74,4 +74,54 @@
       });
     }, { passive: true });
   }
+
+  // ---- scroll-pinned steps ----
+  var stepsSection = document.querySelector('[data-steps]');
+  if (stepsSection) {
+    var steps = stepsSection.querySelectorAll('.step');
+    var progress = document.getElementById('steps-progress');
+    var counter = document.getElementById('steps-counter');
+    function isLg() { return window.matchMedia('(min-width: 1024px)').matches; }
+    function setActive(idx) {
+      for (var i = 0; i < steps.length; i++) steps[i].classList.toggle('is-active', i === idx);
+      if (progress) progress.style.width = ((idx + 1) / steps.length * 100) + '%';
+      if (counter) counter.textContent = ('0' + (idx + 1)).slice(-2);
+    }
+    function updateSteps() {
+      if (reduce || !isLg()) {
+        for (var i = 0; i < steps.length; i++) steps[i].classList.add('is-active');
+        return;
+      }
+      var total = stepsSection.offsetHeight - window.innerHeight;
+      var scrolled = Math.min(Math.max(-stepsSection.getBoundingClientRect().top, 0), total);
+      var p = total > 0 ? scrolled / total : 0;
+      setActive(Math.min(steps.length - 1, Math.floor(p * steps.length)));
+    }
+    updateSteps();
+    window.addEventListener('scroll', updateSteps, { passive: true });
+    window.addEventListener('resize', updateSteps);
+  }
+
+  // ---- inject US map + highlight target states ----
+  var mapEl = document.getElementById('us-map');
+  if (mapEl) {
+    fetch('images/us-map.svg').then(function (r) { return r.text(); }).then(function (svg) {
+      mapEl.innerHTML = svg;
+      var node = mapEl.querySelector('svg');
+      if (node) {
+        if (!node.getAttribute('viewBox')) {
+          var w = node.getAttribute('width'), h = node.getAttribute('height');
+          if (w && h) node.setAttribute('viewBox', '0 0 ' + parseFloat(w) + ' ' + parseFloat(h));
+        }
+        node.removeAttribute('width'); node.removeAttribute('height');
+        node.setAttribute('role', 'img');
+        node.setAttribute('aria-label', 'Map of the United States with Florida, Texas, California, and Arizona highlighted as expansion markets.');
+      }
+      var targets = (mapEl.dataset.targets || '').split(',');
+      targets.forEach(function (id) {
+        var p = mapEl.querySelector('#' + id.trim());
+        if (p) p.classList.add('is-target');
+      });
+    }).catch(function () {});
+  }
 })();

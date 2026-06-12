@@ -52,6 +52,8 @@
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
 }
+.marquee--reverse .marquee__content { animation-direction: reverse; }
+.marquee:hover .marquee__content { animation-play-state: paused; }
 
 /* hero text reveal on load */
 .fade-up {
@@ -91,11 +93,49 @@
 .seal-spin { animation: sealspin 22s linear infinite; transform-box: fill-box; transform-origin: center; }
 @keyframes sealspin { to { transform: rotate(360deg); } }
 
+/* buttons: flat, confident, no soft glow */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-display font-semibold rounded-lg transition-colors duration-200;
+  }
+  .btn-lg { @apply px-8 py-4; }
+  .btn-primary { @apply bg-cm-blue text-white hover:bg-cm-blue-deep; }
+  .btn-secondary { @apply bg-white text-cm-blue-dark border-2 border-cm-blue-dark/15 hover:border-cm-blue hover:text-cm-blue; }
+  .btn-yellow { @apply bg-cm-yellow text-cm-blue-dark hover:bg-cm-orange; }
+}
+.btn:active { transform: translateY(1px); }
+
+/* arrow that slides on hover of its link/button */
+.arrow { display: inline-block; transition: transform 0.2s ease; }
+a:hover .arrow, button:hover .arrow, .group:hover .arrow { transform: translateX(3px); }
+
+/* bento card: image fills, gradient darkens the bottom where text sits */
+.bento-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.bento-scrim {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(17,52,90,0.92) 0%, rgba(17,52,90,0.72) 28%, rgba(17,52,90,0.28) 60%, rgba(17,52,90,0.05) 100%);
+}
+
+/* scroll-pinned steps */
+.step { transition: opacity 0.45s ease, transform 0.45s ease; }
+@media (min-width: 1024px) {
+  .steps-pinned .step { opacity: 0.3; transform: translateY(6px); }
+  .steps-pinned .step.is-active { opacity: 1; transform: none; }
+  .steps-rail { transition: transform 0.45s cubic-bezier(.4,0,.2,1); }
+}
+
+/* US map */
+#us-map svg { width: 100%; height: auto; display: block; }
+#us-map path { fill: #D8F3FF; stroke: #FAFAF7; stroke-width: 1.1; transition: fill 0.3s ease; }
+#us-map path.is-target { fill: var(--cm-yellow); }
+#us-map path.is-target:hover { fill: var(--cm-orange); }
+
 /* respect reduced-motion: kill all motion */
 @media (prefers-reduced-motion: reduce) {
   .marquee__content { animation: none; }
   .fade-up { animation: none; opacity: 1; transform: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .doodle-drift, .seal-spin { animation: none; }
+  .steps-pinned .step { opacity: 1 !important; transform: none !important; }
   html { scroll-behavior: auto; }
 }
